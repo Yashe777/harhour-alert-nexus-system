@@ -21,5 +21,31 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-  </body>
+ <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script>
+  const supabase = supabase.createClient(
+    'https://YOUR_PROJECT.supabase.co', // replace with your URL
+    'YOUR_ANON_KEY' // replace with your anon key
+  );
+
+  $('#appointmentForm').submit(async function (e) {
+    e.preventDefault();
+
+    const { data, error } = await supabase
+      .from('appointments')
+      .insert([{
+        name: $('#name').val(),
+        phone: $('#phone').val(),
+        message: $('#message').val()
+      }]);
+
+    if (error) {
+      alert("Error booking appointment.");
+      console.error(error);
+    } else {
+      alert("Appointment booked!");
+    }
+  });
+</script>
+ </body>
 </html>

@@ -80,18 +80,18 @@ const Index = () => {
     fr: {
       title: 'Harhour Urgences',
       subtitle: 'Votre Santé, Notre Priorité',
-      emergencyCall: 'Appel d\'Urgence',
+      emergencyCall: "Appel d'Urgence",
       bookAppointment: 'Prendre Rendez-vous',
       ourServices: 'Nos Services',
       whyChooseUs: 'Pourquoi Choisir Harhour Urgences',
-      feature1: 'Soins d\'Urgence 24/7',
+      feature1: "Soins d'Urgence 24/7",
       feature1Desc: 'Services médicaux 24h/24 pour toutes les urgences',
       feature2: 'Équipe Médicale Expert',
       feature2Desc: 'Médecins et infirmières qualifiés avec une vaste expérience',
       feature3: 'Équipement Moderne',
       feature3Desc: 'Technologie médicale et installations de pointe',
       feature4: 'Réponse Rapide',
-      feature4Desc: 'Service d\'ambulance rapide et attention médicale immédiate'
+      feature4Desc: "Service d'ambulance rapide et attention médicale immédiate"
     }
   };
 
@@ -154,7 +154,7 @@ const Index = () => {
               </Card>
               <Card className="text-center">
                 <CardContent className="p-4">
-                  <div className="text-2xl font-bold text-blue-500">< 5min</div>
+                  <div className="text-2xl font-bold text-blue-500">&lt; 5min</div>
                   <div className="text-sm text-gray-600">Response Time</div>
                 </CardContent>
               </Card>
